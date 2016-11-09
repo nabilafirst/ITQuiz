@@ -21,10 +21,19 @@ public class AndroidHome extends Activity {
             }
         });
 
-        findViewById(R.id.imageViewBasic1).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.imageViewBasic2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AndroidHome.this, AndroidB2_1.class);
+                startActivity(intent);
+
+            }
+        });
+
+        findViewById(R.id.imageViewBasic3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AndroidHome.this, AndroidB3_1.class);
                 startActivity(intent);
 
             }

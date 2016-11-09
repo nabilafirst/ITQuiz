@@ -17,16 +17,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.coderefer.androidsplashscreenexample.MAINACTIVITY" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".AndroidB1_1" />
+        <activity android:name=".AndroidB1_2" />
+        <activity android:name=".AndroidB1_3" />
+        <activity android:name=".AndroidB1_4" />
+        <activity android:name=".AndroidB1_5"></activity>
     </application>
 
 </manifest>
-

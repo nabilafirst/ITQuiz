@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
         findViewById(R.id.imageViewAndroid).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Android_home.class);
+                Intent intent = new Intent(MainActivity.this, AndroidHome.class);
                 startActivity(intent);
             }
         });
@@ -23,14 +23,14 @@ public class MainActivity extends Activity {
         findViewById(R.id.imageViewDesktop).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Desktop_home.class);
+                Intent intent = new Intent(MainActivity.this, DesktopHome.class);
                 startActivity(intent);
             }
         });
         findViewById(R.id.imageViewWeb).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Web_home.class);
+                Intent intent = new Intent(MainActivity.this, WebHome.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
         findViewById(R.id.imageViewJava).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Java_home.class);
+                Intent intent = new Intent(MainActivity.this, JavaHome.class);
                 startActivity(intent);
             }
         });

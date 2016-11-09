@@ -1,7 +1,9 @@
 package id.sch.smktelkom_mlg.project.xirpl407162534.itquiz;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class WebHome extends Activity {
 

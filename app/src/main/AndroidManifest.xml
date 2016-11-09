@@ -35,7 +35,11 @@
         <activity android:name=".AndroidB2_2" />
         <activity android:name=".AndroidB2_3" />
         <activity android:name=".AndroidB2_4" />
-        <activity android:name=".AndroidB2_5"></activity>
+        <activity android:name=".AndroidB2_5" />
+        <activity android:name=".AndroidHome" />
+        <activity android:name=".WebHome" />
+        <activity android:name=".DesktopHome" />
+        <activity android:name=".JavaHome"></activity>
     </application>
 
 </manifest>

@@ -30,7 +30,12 @@
         <activity android:name=".AndroidB1_2" />
         <activity android:name=".AndroidB1_3" />
         <activity android:name=".AndroidB1_4" />
-        <activity android:name=".AndroidB1_5"></activity>
+        <activity android:name=".AndroidB1_5" />
+        <activity android:name=".AndroidB2_1" />
+        <activity android:name=".AndroidB2_2" />
+        <activity android:name=".AndroidB2_3" />
+        <activity android:name=".AndroidB2_4" />
+        <activity android:name=".AndroidB2_5"></activity>
     </application>
 
 </manifest>

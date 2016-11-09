@@ -54,7 +54,12 @@
         <activity android:name=".WebB3_2" />
         <activity android:name=".WebB3_3" />
         <activity android:name=".WebB3_4" />
-        <activity android:name=".WebB3_5"></activity>
+        <activity android:name=".WebB3_5" />
+        <activity android:name=".AndroidB3_1" />
+        <activity android:name=".AndroidB3_2" />
+        <activity android:name=".AndroidB3_3" />
+        <activity android:name=".AndroidB3_4" />
+        <activity android:name=".AndroidB3_5"></activity>
     </application>
 
 </manifest>

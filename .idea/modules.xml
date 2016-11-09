@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ITQuiz.iml" filepath="$PROJECT_DIR$/ITQuiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/ITQuiz.iml" filepath="$PROJECT_DIR$/ITQuiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ITQuiz2.iml" filepath="$PROJECT_DIR$/ITQuiz2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

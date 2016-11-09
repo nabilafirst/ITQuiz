@@ -39,7 +39,12 @@
         <activity android:name=".AndroidHome" />
         <activity android:name=".WebHome" />
         <activity android:name=".DesktopHome" />
-        <activity android:name=".JavaHome"></activity>
+        <activity android:name=".JavaHome" />
+        <activity android:name=".WebB1_1" />
+        <activity android:name=".WebB1_2" />
+        <activity android:name=".WebB1_3" />
+        <activity android:name=".WebB1_4" />
+        <activity android:name=".WebB1_5"></activity>
     </application>
 
 </manifest>

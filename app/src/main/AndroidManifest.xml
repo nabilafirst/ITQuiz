@@ -64,7 +64,12 @@
         <activity android:name=".Desktop1_2" />
         <activity android:name=".Desktop1_3" />
         <activity android:name=".Desktop1_4" />
-        <activity android:name=".Desktop1_5"></activity>
+        <activity android:name=".Desktop1_5" />
+        <activity android:name=".Desktop2_1" />
+        <activity android:name=".Desktop2_2" />
+        <activity android:name=".Desktop2_3" />
+        <activity android:name=".Desktop2_4" />
+        <activity android:name=".Desktop2_5"></activity>
     </application>
 
 </manifest>

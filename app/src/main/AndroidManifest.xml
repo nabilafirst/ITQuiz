@@ -59,7 +59,10 @@
         <activity android:name=".AndroidB3_2" />
         <activity android:name=".AndroidB3_3" />
         <activity android:name=".AndroidB3_4" />
-        <activity android:name=".AndroidB3_5"></activity>
+        <activity android:name=".AndroidB3_5" />
+        <activity android:name=".Desktop1_1" />
+        <activity android:name=".Desktop1_2" />
+        <activity android:name=".Desktop1_3"></activity>
     </application>
 
 </manifest>

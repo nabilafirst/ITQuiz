@@ -17,6 +17,14 @@ public class JavaHome extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(JavaHome.this, JavaB1_1.class);
                 startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.imageViewBasic2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaHome.this, JavaB2_1.class);
+                startActivity(intent);
 
             }
         });

@@ -8,14 +8,14 @@ import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.ImageView;
 
-public class JavaB1_3 extends Activity implements View.OnClickListener {
+public class JavaB3_1 extends Activity implements View.OnClickListener {
 
     ImageView alert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java_b1_1);
+        setContentView(R.layout.activity_java_b3_1);
 
         alert = (ImageView) findViewById(R.id.imageViewCek);
         alert.setOnClickListener(this);
@@ -23,7 +23,7 @@ public class JavaB1_3 extends Activity implements View.OnClickListener {
         findViewById(R.id.imageViewNext).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(JavaB1_3.this, JavaB1_4.class);
+                Intent intent = new Intent(JavaB3_1.this, JavaB3_2.class);
                 startActivity(intent);
 
             }
@@ -36,8 +36,7 @@ public class JavaB1_3 extends Activity implements View.OnClickListener {
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("System.in untuk merespon komunikasi dari keyboard." +
-                            " Dan opsi jawaban lain tidak ada dalam java.")
+                    .setMessage("Method equals() untuk membandingkan dua data String.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

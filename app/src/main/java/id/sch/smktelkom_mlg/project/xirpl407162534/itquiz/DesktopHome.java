@@ -24,7 +24,7 @@ public class DesktopHome extends Activity {
         findViewById(R.id.imageViewBasic2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DesktopHome.this, AndroidB2_1.class);
+                Intent intent = new Intent(DesktopHome.this, Desktop2_1.class);
                 startActivity(intent);
 
             }

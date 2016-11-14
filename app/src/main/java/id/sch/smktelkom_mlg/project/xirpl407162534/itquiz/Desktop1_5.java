@@ -65,9 +65,9 @@ public class Desktop1_5 extends Activity implements View.OnTouchListener, View.O
                         }
                     })
                     .show();
-        } else if (view == btnD) {
-            Toast.makeText(this, "Jawaban anda benar", Toast.LENGTH_SHORT).show();
         } else if (view == btnA) {
+            Toast.makeText(this, "Jawaban anda benar", Toast.LENGTH_SHORT).show();
+        } else if (view == btnD) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
         } else if (view == btnB) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
@@ -95,7 +95,7 @@ public class Desktop1_5 extends Activity implements View.OnTouchListener, View.O
 
         switch (v.getId()) {
             case R.id.buttonA:
-                btnA.setBackgroundColor(Color.RED);
+                btnA.setBackgroundColor(Color.GREEN);
                 break;
             case R.id.buttonB:
                 btnB.setBackgroundColor(Color.RED);
@@ -104,7 +104,7 @@ public class Desktop1_5 extends Activity implements View.OnTouchListener, View.O
                 btnC.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonD:
-                btnD.setBackgroundColor(Color.GREEN);
+                btnD.setBackgroundColor(Color.RED);
                 break;
         }
         btnA.setPressed(btnA.isPressed());

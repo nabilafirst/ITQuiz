@@ -40,6 +40,15 @@ public class Desktop3_4 extends Activity implements View.OnTouchListener, View.O
         btnD.setOnClickListener(this);
 
 
+        findViewById(R.id.buttonGambar).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Desktop3_4.this, gambar2.class);
+                startActivity(intent);
+
+            }
+        });
+
         findViewById(R.id.imageViewNext).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

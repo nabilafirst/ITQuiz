@@ -10,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Desktop1_2 extends Activity implements View.OnClickListener, View.OnTouchListener {
     Button btnA, btnB, btnC, btnD;
@@ -66,7 +67,10 @@ public class Desktop1_2 extends Activity implements View.OnClickListener, View.O
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage(" ")
+                    .setMessage(" Microsoft Visual Studio by merupakan sebuah perangkat lunak lengkap (suite) " +
+                            "yang dapat digunakan untuk melakukan pengembangan aplikasi, baik itu aplikasi " +
+                            "bisnis, aplikasi personal, ataupun komponen aplikasinya, dalam bentuk aplikasi c" +
+                            "onsole, aplikasi Windows, ataupun aplikasi Web ")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -75,21 +79,29 @@ public class Desktop1_2 extends Activity implements View.OnClickListener, View.O
                         }
                     })
                     .show();
-        }
 
+        } else if (view == btnC) {
+            Toast.makeText(this, "Jawaban anda benar", Toast.LENGTH_SHORT).show();
+        } else if (view == btnB) {
+            Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
+        } else if (view == btnA) {
+            Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
         switch (view.getId()) {
             case R.id.buttonA:
-                btnA.setBackgroundColor(Color.GREEN);
+                btnA.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonB:
                 btnB.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonC:
-                btnC.setBackgroundColor(Color.RED);
+                btnC.setBackgroundColor(Color.GREEN);
                 break;
             case R.id.buttonD:
                 btnD.setBackgroundColor(Color.RED);

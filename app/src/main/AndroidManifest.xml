@@ -89,7 +89,10 @@
         <activity android:name=".Desktop3_2" />
         <activity android:name=".Desktop3_3" />
         <activity android:name=".Desktop3_4" />
-        <activity android:name=".Desktop3_5"></activity>
+        <activity android:name=".Desktop3_5" />
+        <activity android:name=".gambar" />
+        <activity android:name=".gambar2" />
+        <activity android:name=".gambar3"></activity>
     </application>
 
 </manifest>

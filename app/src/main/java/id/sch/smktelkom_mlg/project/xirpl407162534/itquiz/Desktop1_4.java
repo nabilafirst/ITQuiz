@@ -56,8 +56,7 @@ public class Desktop1_4 extends Activity implements View.OnTouchListener, View.O
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Desktop adalah aplikasi yang digunakan pada perangkat laptop atau komputer," +
-                            " diciptakan oleh Bell labs, pada tahun 1980-an")
+                    .setMessage(" ")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

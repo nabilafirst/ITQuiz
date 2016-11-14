@@ -69,7 +69,27 @@
         <activity android:name=".Desktop2_2" />
         <activity android:name=".Desktop2_3" />
         <activity android:name=".Desktop2_4" />
-        <activity android:name=".Desktop2_5"></activity>
+        <activity android:name=".Desktop2_5" />
+        <activity android:name=".JavaB1_1" />
+        <activity android:name=".JavaB1_2" />
+        <activity android:name=".JavaB1_3" />
+        <activity android:name=".JavaB1_4" />
+        <activity android:name=".JavaB1_5" />
+        <activity android:name=".JavaB2_1" />
+        <activity android:name=".JavaB2_2" />
+        <activity android:name=".JavaB2_3" />
+        <activity android:name=".JavaB2_4" />
+        <activity android:name=".JavaB2_5" />
+        <activity android:name=".JavaB3_1" />
+        <activity android:name=".JavaB3_2" />
+        <activity android:name=".JavaB3_3" />
+        <activity android:name=".JavaB3_4" />
+        <activity android:name=".JavaB3_5" />
+        <activity android:name=".Desktop3_1" />
+        <activity android:name=".Desktop3_2" />
+        <activity android:name=".Desktop3_3" />
+        <activity android:name=".Desktop3_4" />
+        <activity android:name=".Desktop3_5"></activity>
     </application>
 
 </manifest>

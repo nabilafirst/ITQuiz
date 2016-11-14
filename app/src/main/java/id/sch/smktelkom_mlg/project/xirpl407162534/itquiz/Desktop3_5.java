@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Desktop1_3 extends Activity implements View.OnTouchListener, View.OnClickListener {
+public class Desktop3_5 extends Activity implements View.OnTouchListener, View.OnClickListener {
 
     Button btnA, btnB, btnC, btnD;
     ImageView alert;
@@ -20,7 +20,7 @@ public class Desktop1_3 extends Activity implements View.OnTouchListener, View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_desktop1_3);
+        setContentView(R.layout.activity_desktop3_5);
 
 
         initButton();
@@ -43,7 +43,7 @@ public class Desktop1_3 extends Activity implements View.OnTouchListener, View.O
         findViewById(R.id.imageViewNext).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desktop1_3.this, Desktop1_4.class);
+                Intent intent = new Intent(Desktop3_5.this, DesktopHome.class);
                 startActivity(intent);
 
             }

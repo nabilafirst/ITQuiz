@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ITQuiz</string>
     <string name="title_activity_web_b1_5">WebB1_5</string>
+    <string name="opsiA"><![CDATA[for(int i=1; i<=9; i++) {}]]></string>
+    <string name="opsiB"><![CDATA[for(int j=0; j<=10; j++) {}]]></string>
+    <string name="opsiC"><![CDATA[for(int i=10; i>=1; i--) {}]]></string>
+    <string name="opsiD"><![CDATA[for(int j=10; j>0; j-) {}]]></string>
 </resources>

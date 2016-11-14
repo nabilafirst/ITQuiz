@@ -12,22 +12,23 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Desktop1_5 extends Activity implements View.OnClickListener, View.OnTouchListener {
+public class Desktop1_5 extends Activity implements View.OnTouchListener, View.OnClickListener {
+
     Button btnA, btnB, btnC, btnD;
     ImageView alert;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_desktop1_5);
 
+
         initButton();
 
         initButtonClickedCallback();
 
 
-        alert = (ImageView) findViewById(R.id.imageView);
+        alert = (ImageView) findViewById(R.id.imageViewCek);
         alert.setOnClickListener(this);
         btnA = (Button) findViewById(R.id.buttonA);
         btnA.setOnClickListener(this);
@@ -37,6 +38,7 @@ public class Desktop1_5 extends Activity implements View.OnClickListener, View.O
         btnC.setOnClickListener(this);
         btnD = (Button) findViewById(R.id.buttonD);
         btnD.setOnClickListener(this);
+
 
         findViewById(R.id.imageViewNext).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,11 +54,9 @@ public class Desktop1_5 extends Activity implements View.OnClickListener, View.O
     @Override
     public void onClick(View view) {
         if (view == alert) {
-
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Android adalah sistem operasi berbasis Linux yang dirancang untuk perangkat bergerak layar " +
-                            "sentuh seperti telepon pintar dan komputer tablet")
+                    .setMessage(" ")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -65,24 +65,15 @@ public class Desktop1_5 extends Activity implements View.OnClickListener, View.O
                         }
                     })
                     .show();
-
-        } else if (view == btnA) {
+        } else if (view == btnD) {
             Toast.makeText(this, "Jawaban anda benar", Toast.LENGTH_SHORT).show();
-        } else if (view == btnB) {
+        } else if (view == btnA) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
-        } else if (view == btnC) {
+        } else if (view == btnB) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    private void initButton() {
-        btnA = (Button) findViewById(R.id.buttonA);
-        btnB = (Button) findViewById(R.id.buttonB);
-        btnC = (Button) findViewById(R.id.buttonC);
-        btnD = (Button) findViewById(R.id.buttonD);
-
     }
 
     private void initButtonClickedCallback() {
@@ -92,11 +83,19 @@ public class Desktop1_5 extends Activity implements View.OnClickListener, View.O
         btnD.setOnTouchListener(this);
     }
 
+    private void initButton() {
+        btnA = (Button) findViewById(R.id.buttonA);
+        btnB = (Button) findViewById(R.id.buttonB);
+        btnC = (Button) findViewById(R.id.buttonC);
+        btnD = (Button) findViewById(R.id.buttonD);
+    }
+
     @Override
-    public boolean onTouch(View v, MotionEvent me) {
+    public boolean onTouch(View v, MotionEvent motionEvent) {
+
         switch (v.getId()) {
             case R.id.buttonA:
-                btnA.setBackgroundColor(Color.GREEN);
+                btnA.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonB:
                 btnB.setBackgroundColor(Color.RED);
@@ -105,7 +104,7 @@ public class Desktop1_5 extends Activity implements View.OnClickListener, View.O
                 btnC.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonD:
-                btnD.setBackgroundColor(Color.RED);
+                btnD.setBackgroundColor(Color.GREEN);
                 break;
         }
         btnA.setPressed(btnA.isPressed());
@@ -113,7 +112,6 @@ public class Desktop1_5 extends Activity implements View.OnClickListener, View.O
         btnC.setPressed(btnC.isPressed());
         btnD.setPressed(btnD.isPressed());
         return false;
+
     }
 }
-
-

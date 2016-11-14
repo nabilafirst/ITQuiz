@@ -33,7 +33,7 @@ public class DesktopHome extends Activity {
         findViewById(R.id.imageViewBasic3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DesktopHome.this, AndroidB3_1.class);
+                Intent intent = new Intent(DesktopHome.this, Desktop3_1.class);
                 startActivity(intent);
 
             }

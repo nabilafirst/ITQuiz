@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonB"
         android:layout_below="@+id/buttonB"
-        android:text="Relative, linear" />
+        android:text="Relative, linear, grid" />
 
     <Button
         android:id="@+id/buttonD"
@@ -52,7 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonC"
         android:layout_below="@+id/buttonC"
-        android:text="Relative, linear, table, frame" />
+        android:text="Relative, linear, table, frame, grid" />
 
     <ImageView
         android:id="@+id/imageView"

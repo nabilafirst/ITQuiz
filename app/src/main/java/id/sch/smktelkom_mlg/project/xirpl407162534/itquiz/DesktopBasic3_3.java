@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Desktop3_3 extends Activity implements View.OnTouchListener, View.OnClickListener {
+public class DesktopBasic3_3 extends Activity implements View.OnTouchListener, View.OnClickListener {
 
     Button btnA, btnB, btnC, btnD;
     ImageView alert;
@@ -20,8 +20,7 @@ public class Desktop3_3 extends Activity implements View.OnTouchListener, View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_desktop3_3);
-
+        setContentView(R.layout.activity_desktop_basic3_3);
 
         initButton();
 
@@ -43,7 +42,7 @@ public class Desktop3_3 extends Activity implements View.OnTouchListener, View.O
         findViewById(R.id.buttonGambar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desktop3_3.this, gambar.class);
+                Intent intent = new Intent(DesktopBasic3_3.this, gambar.class);
                 startActivity(intent);
 
             }
@@ -52,7 +51,7 @@ public class Desktop3_3 extends Activity implements View.OnTouchListener, View.O
         findViewById(R.id.imageViewNext).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desktop3_3.this, Desktop3_4.class);
+                Intent intent = new Intent(DesktopBasic3_3.this, DesktopBasic3_4.class);
                 startActivity(intent);
 
             }
@@ -123,4 +122,7 @@ public class Desktop3_3 extends Activity implements View.OnTouchListener, View.O
         return false;
 
     }
+
+
 }
+

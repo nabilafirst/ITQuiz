@@ -56,8 +56,11 @@ public class AndroidB2_2 extends Activity implements View.OnClickListener, OnTou
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Android adalah sistem operasi berbasis Linux yang dirancang untuk perangkat bergerak layar " +
-                            "sentuh seperti telepon pintar dan komputer tablet")
+                    .setMessage("Activity adalah komponen pada aplikasi Android yang " +
+                            "menampilkan dan mengatur halaman aplikasi sebagai tempat interaksi antara pengguna dengan aplikasi. " +
+                            "Sebuah Activity mengatur satu halaman user interface aplikasi. Sehingga jika sebuah aplikasi Android" +
+                            " memiliki beberapa halaman user interface yang saling berinteraksi, berarti aplikasi tersebut memiliki" +
+                            " beberapa Activity yang saling berinteraksi.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

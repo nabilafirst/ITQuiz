@@ -87,12 +87,12 @@
         <activity android:name=".JavaB3_5" />
         <activity android:name=".Desktop3_1" />
         <activity android:name=".Desktop3_2" />
-        <activity android:name=".Desktop3_3" />
-        <activity android:name=".Desktop3_4" />
         <activity android:name=".Desktop3_5" />
         <activity android:name=".gambar" />
         <activity android:name=".gambar2" />
-        <activity android:name=".gambar3"></activity>
+        <activity android:name=".gambar3" />
+        <activity android:name=".DesktopBasic3_3" />
+        <activity android:name=".DesktopBasic3_4"></activity>
     </application>
 
 </manifest>

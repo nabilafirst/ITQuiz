@@ -43,7 +43,7 @@ public class Desktop3_2 extends Activity implements View.OnTouchListener, View.O
         findViewById(R.id.imageViewNext).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desktop3_2.this, Desktop3_3.class);
+                Intent intent = new Intent(Desktop3_2.this, DesktopBasic3_3.class);
                 startActivity(intent);
 
             }

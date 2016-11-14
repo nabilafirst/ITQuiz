@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Desktop3_4 extends Activity implements View.OnTouchListener, View.OnClickListener {
+public class DesktopBasic3_4 extends Activity implements View.OnTouchListener, View.OnClickListener {
 
     Button btnA, btnB, btnC, btnD;
     ImageView alert;
@@ -20,8 +20,7 @@ public class Desktop3_4 extends Activity implements View.OnTouchListener, View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_desktop3_4);
-
+        setContentView(R.layout.activity_desktop_basic3_4);
 
         initButton();
 
@@ -43,7 +42,7 @@ public class Desktop3_4 extends Activity implements View.OnTouchListener, View.O
         findViewById(R.id.buttonGambar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desktop3_4.this, gambar2.class);
+                Intent intent = new Intent(DesktopBasic3_4.this, gambar2.class);
                 startActivity(intent);
 
             }
@@ -52,7 +51,7 @@ public class Desktop3_4 extends Activity implements View.OnTouchListener, View.O
         findViewById(R.id.imageViewNext).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desktop3_4.this, Desktop3_5.class);
+                Intent intent = new Intent(DesktopBasic3_4.this, Desktop3_5.class);
                 startActivity(intent);
 
             }
@@ -74,7 +73,7 @@ public class Desktop3_4 extends Activity implements View.OnTouchListener, View.O
                         }
                     })
                     .show();
-        } else if (view == btnD) {
+        } else if (view == btnC) {
             Toast.makeText(this, "Jawaban anda benar", Toast.LENGTH_SHORT).show();
         } else if (view == btnA) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
@@ -110,10 +109,10 @@ public class Desktop3_4 extends Activity implements View.OnTouchListener, View.O
                 btnB.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonC:
-                btnC.setBackgroundColor(Color.RED);
+                btnC.setBackgroundColor(Color.GREEN);
                 break;
             case R.id.buttonD:
-                btnD.setBackgroundColor(Color.GREEN);
+                btnD.setBackgroundColor(Color.RED);
                 break;
         }
         btnA.setPressed(btnA.isPressed());
@@ -123,4 +122,7 @@ public class Desktop3_4 extends Activity implements View.OnTouchListener, View.O
         return false;
 
     }
+
+
 }
+

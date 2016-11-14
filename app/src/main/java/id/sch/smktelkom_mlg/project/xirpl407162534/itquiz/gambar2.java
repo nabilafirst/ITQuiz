@@ -15,7 +15,7 @@ public class gambar2 extends Activity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(gambar2.this, Desktop3_4.class);
+                Intent intent = new Intent(gambar2.this, DesktopBasic3_4.class);
                 startActivity(intent);
 
             }

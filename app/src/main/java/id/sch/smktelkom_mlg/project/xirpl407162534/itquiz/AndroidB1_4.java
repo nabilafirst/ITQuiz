@@ -55,8 +55,7 @@ public class AndroidB1_4 extends Activity implements View.OnClickListener, OnTou
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Android adalah sistem operasi berbasis Linux yang dirancang untuk perangkat bergerak layar " +
-                            "sentuh seperti telepon pintar dan komputer tablet")
+                    .setMessage("File XML/File layout disimpan di direktori res/layout")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

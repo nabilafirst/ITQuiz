@@ -56,8 +56,8 @@ public class AndroidB3_1 extends Activity implements View.OnClickListener, OnTou
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Android adalah sistem operasi berbasis Linux yang dirancang untuk perangkat bergerak layar " +
-                            "sentuh seperti telepon pintar dan komputer tablet")
+                    .setMessage("Untuk mengakses elemen yang ada pada Layout, maka kita menggunakan id " +
+                            "untuk mengaksesnya. Untuk itu digunakan method findViewById() untuk mengaksesnya.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

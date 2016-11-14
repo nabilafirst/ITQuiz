@@ -56,8 +56,10 @@ public class AndroidB3_3 extends Activity implements View.OnClickListener, OnTou
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Android adalah sistem operasi berbasis Linux yang dirancang untuk perangkat bergerak layar " +
-                            "sentuh seperti telepon pintar dan komputer tablet")
+                    .setMessage("Android Fragment adalah sebuah bagian dari user interface " +
+                            " aplikasi yang dapat ditempatkan pada activity yang memungkinkan " +
+                            "untuk mendesain activity yang modular atau bisa dikatakan fragment semacam sub-activity. Jika Anda" +
+                            " ingin memindahkan aplikasi 360 derajat, Anda dapat melakukan ini dengan menggunakan fragment.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

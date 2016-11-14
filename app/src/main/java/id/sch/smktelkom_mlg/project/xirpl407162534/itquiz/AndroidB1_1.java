@@ -57,7 +57,7 @@ public class AndroidB1_1 extends Activity implements View.OnClickListener, OnTou
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
                     .setMessage("Android adalah aplikasi perangkat lunak untuk perangkat mobile," +
-                            " yang mencakup sistem operasi, aplikasi middleware, dan beberapa aplikasi kunci")
+                            " yang mencakup sistem operasi, aplikasi middleware, dan beberapa aplikasi kunci.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

@@ -59,7 +59,7 @@ public class AndroidB1_5 extends Activity implements View.OnClickListener, OnTou
                             " Masing-masing versi dirilis sesuai urutan alfabet, yakni Cupcake (1.5)," +
                             " Donut (1.6), Eclair (2.0–2.1), Froyo (2.2–2.2.3), Gingerbread (2.3–2.3.7), " +
                             "Honeycomb (3.0–3.2.6), Ice Cream Sandwich (4.0–4.0.4), Jelly Bean (4.1–4.3), " +
-                            "KitKat (4.4+), Lollipop (5.0+), Marshmallow (6.0)")
+                            "KitKat (4.4+), Lollipop (5.0+), Marshmallow (6.0).")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

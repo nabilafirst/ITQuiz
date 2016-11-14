@@ -56,8 +56,7 @@ public class AndroidB3_2 extends Activity implements View.OnClickListener, OnTou
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Android adalah sistem operasi berbasis Linux yang dirancang untuk perangkat bergerak layar " +
-                            "sentuh seperti telepon pintar dan komputer tablet")
+                    .setMessage("Action bar pada umumnya diletakkan pada bagian atas aplikasi android. Action Bar dapat digunakan hanya pada sebuah Activity.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

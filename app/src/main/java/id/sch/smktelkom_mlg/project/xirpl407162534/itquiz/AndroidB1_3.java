@@ -55,7 +55,7 @@ public class AndroidB1_3 extends Activity implements View.OnClickListener, OnTou
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Pemrograman Android didasarkan pada bahasa pemrograman Java")
+                    .setMessage("Pemrograman Android didasarkan pada bahasa pemrograman Java.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

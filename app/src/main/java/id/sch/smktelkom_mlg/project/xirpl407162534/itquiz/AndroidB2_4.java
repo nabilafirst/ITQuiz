@@ -56,7 +56,7 @@ public class AndroidB2_4 extends Activity implements View.OnClickListener, OnTou
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Menurut dokumentasi Google, Android mendukung 4 jenis orientasi, yaitu landscape, portrait, sensor dan ada orientasi")
+                    .setMessage("Menurut dokumentasi Google, Android mendukung 4 jenis orientasi, yaitu landscape, portrait, sensor dan  No Orientasi.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

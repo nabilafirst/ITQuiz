@@ -57,7 +57,7 @@ public class AndroidB2_1 extends Activity implements View.OnClickListener, OnTou
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
                     .setMessage("Splashscreen merupakan start screen atau layar pembuka pada aplikasi android, " +
-                            "atau tampilan loading awal saat aplikasi android di jalankan untuk pertama kali")
+                            "atau tampilan loading awal saat aplikasi android di jalankan untuk pertama kali.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

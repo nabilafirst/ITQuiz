@@ -55,7 +55,7 @@ public class AndroidB1_4 extends Activity implements View.OnClickListener, OnTou
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("File XML/File layout disimpan di direktori res/layout")
+                    .setMessage("File XML/File layout disimpan di direktori res/layout.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

@@ -56,7 +56,7 @@ public class Desktop1_4 extends Activity implements View.OnTouchListener, View.O
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage(" ")
+                    .setMessage("Format file pada pemrograman dektop adalah .SLN , format itu digunakan pada aplikasi Visual Studio  ")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -112,6 +112,11 @@ public class Desktop1_4 extends Activity implements View.OnTouchListener, View.O
         btnC.setPressed(btnC.isPressed());
         btnD.setPressed(btnD.isPressed());
         return false;
+
+    }
+
+    @Override
+    public void onBackPressed() {
 
     }
 }

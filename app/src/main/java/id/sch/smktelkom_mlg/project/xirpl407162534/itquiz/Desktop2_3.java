@@ -113,6 +113,11 @@ public class Desktop2_3 extends Activity implements View.OnClickListener, View.O
         btnD.setPressed(btnD.isPressed());
         return false;
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }
 
 

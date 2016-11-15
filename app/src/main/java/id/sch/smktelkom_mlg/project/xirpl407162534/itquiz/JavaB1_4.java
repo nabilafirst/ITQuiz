@@ -48,4 +48,9 @@ public class JavaB1_4 extends Activity implements View.OnClickListener {
                     .show();
         }
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

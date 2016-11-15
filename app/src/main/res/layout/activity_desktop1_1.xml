@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonB"
         android:layout_below="@+id/buttonB"
-        android:text="Pemrograman Berbasi Mobile" />
+        android:text="Pemrograman Berbasis Mobile" />
 
     <Button
         android:id="@+id/buttonD"
@@ -52,7 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonC"
         android:layout_below="@+id/buttonC"
-        android:text="Pemrograman berbasi Desktop" />
+        android:text="Pemrograman berbasis Desktop" />
 
     <ImageView
         android:id="@+id/imageViewCek"

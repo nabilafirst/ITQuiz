@@ -56,7 +56,7 @@ public class Desktop1_3 extends Activity implements View.OnTouchListener, View.O
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage(" ")
+                    .setMessage("Bahasa Pemrograman C++ adalah salah satu pemrograman yang umum digunakan untuk membuat program Desktop. bahasa lain yang digunakan yaitu VB atau visual basic ")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -112,6 +112,11 @@ public class Desktop1_3 extends Activity implements View.OnTouchListener, View.O
         btnC.setPressed(btnC.isPressed());
         btnD.setPressed(btnD.isPressed());
         return false;
+
+    }
+
+    @Override
+    public void onBackPressed() {
 
     }
 }

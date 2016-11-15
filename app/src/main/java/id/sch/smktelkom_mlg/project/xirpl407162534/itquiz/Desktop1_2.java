@@ -114,5 +114,10 @@ public class Desktop1_2 extends Activity implements View.OnClickListener, View.O
 
         return false;
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }
 

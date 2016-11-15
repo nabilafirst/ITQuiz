@@ -117,4 +117,9 @@ public class AndroidB3_3 extends Activity implements View.OnClickListener, OnTou
         btnD.setPressed(btnD.isPressed());
         return false;
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

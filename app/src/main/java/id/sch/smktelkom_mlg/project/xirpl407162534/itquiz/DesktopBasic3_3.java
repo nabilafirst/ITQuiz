@@ -123,6 +123,11 @@ public class DesktopBasic3_3 extends Activity implements View.OnTouchListener, V
 
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
 
 }
 

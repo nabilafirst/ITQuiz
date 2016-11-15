@@ -123,4 +123,9 @@ public class Desktop3_5 extends Activity implements View.OnTouchListener, View.O
         return false;
 
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

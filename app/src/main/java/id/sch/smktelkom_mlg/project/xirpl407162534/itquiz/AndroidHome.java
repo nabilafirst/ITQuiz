@@ -41,4 +41,10 @@ public class AndroidHome extends Activity {
 
 
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(AndroidHome.this, MainActivity.class);
+        startActivity(intent);
+    }
 }

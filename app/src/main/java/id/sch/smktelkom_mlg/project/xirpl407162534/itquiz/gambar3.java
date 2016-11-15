@@ -22,4 +22,8 @@ public class gambar3 extends Activity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+    }
 }

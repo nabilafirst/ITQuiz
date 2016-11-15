@@ -40,4 +40,11 @@ public class DesktopHome extends Activity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(DesktopHome.this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

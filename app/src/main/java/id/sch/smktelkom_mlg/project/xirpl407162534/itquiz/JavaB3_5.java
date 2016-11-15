@@ -10,4 +10,10 @@ public class JavaB3_5 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java_b3_5);
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
+
 }

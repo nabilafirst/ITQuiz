@@ -21,4 +21,8 @@ public class WebB2_3 extends Activity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+    }
 }

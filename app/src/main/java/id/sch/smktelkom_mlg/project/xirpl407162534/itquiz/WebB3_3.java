@@ -20,4 +20,8 @@ public class WebB3_3 extends Activity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+    }
 }

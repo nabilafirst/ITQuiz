@@ -20,4 +20,8 @@ public class WebB1_5 extends Activity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+    }
 }

@@ -39,4 +39,10 @@ public class JavaHome extends Activity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(JavaHome.this, MainActivity.class);
+        startActivity(intent);
+    }
 }

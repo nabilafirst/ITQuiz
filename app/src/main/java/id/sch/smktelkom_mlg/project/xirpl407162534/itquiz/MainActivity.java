@@ -1,9 +1,11 @@
 package id.sch.smktelkom_mlg.project.xirpl407162534.itquiz;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.widget.ToggleButton;
@@ -70,12 +72,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        // TODO Auto-generated method stub
-        mediaPlayer.stop();
-        MainActivity.this.finish();
-    }
+
 
     @Override
     protected void onStart() {
@@ -120,5 +117,21 @@ public class MainActivity extends Activity {
             mediaPlayer.release();
     }
 
+    @Override
+    public void onBackPressed() {
+        mediaPlayer.stop();
+
+
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        MainActivity.this.finish();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
+    }
 
 }

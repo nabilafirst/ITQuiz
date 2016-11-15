@@ -22,5 +22,9 @@ public class gambar2 extends Activity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+    }
 }
 

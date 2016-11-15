@@ -42,4 +42,11 @@ public class WebHome extends Activity {
 
 
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(WebHome.this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

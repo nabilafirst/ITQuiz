@@ -3,6 +3,7 @@ package id.sch.smktelkom_mlg.project.xirpl407162534.itquiz;
 
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -42,7 +43,8 @@ public class AndroidB3_5 extends Activity implements View.OnClickListener, OnTou
         findViewById(R.id.imageViewNext).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(AndroidB3_5.this, AndroidHome.class);
+                startActivity(intent);
             }
         });
 

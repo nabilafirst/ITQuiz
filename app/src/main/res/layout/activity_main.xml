@@ -56,4 +56,17 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/imageViewWeb"
         android:background="@drawable/javabackground" />
+
+    <ToggleButton
+        android:id="@+id/toggleSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:checked="false"
+        android:onClick="onToggleClicked"
+        android:textColor="#222"
+        android:textOff="Matikan Musik"
+        android:textOn="Hidupkan Musik" />
+
 </RelativeLayout>

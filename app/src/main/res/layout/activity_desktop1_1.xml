@@ -30,7 +30,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonA"
         android:layout_below="@+id/buttonA"
-        android:text="Aplikasi pada Desktop" />
+        android:text="Pemrograman pembuatan Web" />
 
     <Button
         android:id="@+id/buttonC"
@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonB"
         android:layout_below="@+id/buttonB"
-        android:text="Pemrograman Berbasis Mobile" />
+        android:text="Pemrograman pembuatan aplikasi Mobile" />
 
     <Button
         android:id="@+id/buttonD"
@@ -52,7 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonC"
         android:layout_below="@+id/buttonC"
-        android:text="Pemrograman berbasis Desktop" />
+        android:text="Pemrograman pembuatan aplikasi Desktop" />
 
     <ImageView
         android:id="@+id/imageViewCek"

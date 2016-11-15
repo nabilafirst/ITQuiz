@@ -2,11 +2,16 @@ package id.sch.smktelkom_mlg.project.xirpl407162534.itquiz;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.ToggleButton;
 
 public class MainActivity extends Activity {
-
+    private static final String TAG = "LivecycleTag";
+    MediaPlayer mediaPlayer;
+    ToggleButton myToggle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +48,76 @@ public class MainActivity extends Activity {
             }
         });
 
+        Log.d(TAG, "onCreate: ");
+
+        mediaPlayer = MediaPlayer.create(this, R.raw.song);
+
+        myToggle = (ToggleButton) findViewById(R.id.toggleSound);
+        mediaPlayer = MediaPlayer.create(this, R.raw.song);
+        mediaPlayer.setLooping(true);
+        mediaPlayer.setVolume(1, 1);
+        mediaPlayer.start();
+
+    }
+
+    public void onToggleClicked(View view) {
+        boolean on = ((ToggleButton) view).isChecked();
+
+        if (on) {
+            mediaPlayer.setVolume(0, 0);
+        } else {
+            mediaPlayer.setVolume(1, 1);
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        mediaPlayer.stop();
+        MainActivity.this.finish();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart: ");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume: ");
+
+        mediaPlayer.start();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause: ");
+
+        mediaPlayer.pause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop: ");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart: ");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy: ");
+
+        if (mediaPlayer != null)
+            mediaPlayer.release();
     }
 
 

@@ -55,7 +55,7 @@ public class Desktop2_4 extends Activity implements View.OnClickListener, View.O
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage(" ")
+                    .setMessage("jawabannya adalah Statement Input Output ")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

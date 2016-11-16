@@ -56,7 +56,7 @@ public class Desktop1_5 extends Activity implements View.OnTouchListener, View.O
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage(" ")
+                    .setMessage("Integer dan character adalah termasuk tipe data numerik, sedangkan If / Else adalah operator kondisi, number & alphabet bukan tipe data ")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

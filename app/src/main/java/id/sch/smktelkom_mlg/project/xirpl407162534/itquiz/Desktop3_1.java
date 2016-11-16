@@ -56,7 +56,7 @@ public class Desktop3_1 extends Activity implements View.OnTouchListener, View.O
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage(" ")
+                    .setMessage("For akan menghasilkan perulangan 1 - 10 karena i = 1 ; i <=10 ")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -65,11 +65,11 @@ public class Desktop3_1 extends Activity implements View.OnTouchListener, View.O
                         }
                     })
                     .show();
-        } else if (view == btnD) {
+        } else if (view == btnB) {
             Toast.makeText(this, "Jawaban anda benar", Toast.LENGTH_SHORT).show();
         } else if (view == btnA) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
-        } else if (view == btnB) {
+        } else if (view == btnC) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
@@ -98,13 +98,13 @@ public class Desktop3_1 extends Activity implements View.OnTouchListener, View.O
                 btnA.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonB:
-                btnB.setBackgroundColor(Color.RED);
+                btnB.setBackgroundColor(Color.GREEN);
                 break;
             case R.id.buttonC:
                 btnC.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonD:
-                btnD.setBackgroundColor(Color.GREEN);
+                btnD.setBackgroundColor(Color.RED);
                 break;
         }
         btnA.setPressed(btnA.isPressed());

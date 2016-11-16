@@ -19,7 +19,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:text="Turbo C++" />
+        android:text="1,2,3,4,5,6,7,8,9" />
 
     <Button
         android:id="@+id/buttonB"
@@ -30,7 +30,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonA"
         android:layout_below="@+id/buttonA"
-        android:text=" TopSpeed C++" />
+        android:text="1,2,3,4,5,6,7,8,9,10" />
 
     <Button
         android:id="@+id/buttonC"
@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonB"
         android:layout_below="@+id/buttonB"
-        android:text=" Zortech C++" />
+        android:text="10,9,8,7,6,5,4,3,2,1" />
 
     <Button
         android:id="@+id/buttonD"
@@ -52,7 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonC"
         android:layout_below="@+id/buttonC"
-        android:text="Quic Basic C++" />
+        android:text="9,8,7,6,5,4,3,2,1" />
 
     <ImageView
         android:id="@+id/imageViewCek"

@@ -55,7 +55,7 @@ public class Desktop2_5 extends Activity implements View.OnClickListener, View.O
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage(" ")
+                    .setMessage(" Jawabannya adalah Quick Basic, karena itu bukan versi C++")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

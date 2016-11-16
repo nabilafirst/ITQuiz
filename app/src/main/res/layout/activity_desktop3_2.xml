@@ -19,7 +19,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:text="Turbo C++" />
+        android:text="KOSONG)" />
 
     <Button
         android:id="@+id/buttonB"
@@ -30,7 +30,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonA"
         android:layout_below="@+id/buttonA"
-        android:text=" TopSpeed C++" />
+        android:text="KOSONG" />
 
     <Button
         android:id="@+id/buttonC"
@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonB"
         android:layout_below="@+id/buttonB"
-        android:text=" Zortech C++" />
+        android:text="KOSONG" />
 
     <Button
         android:id="@+id/buttonD"
@@ -52,7 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonC"
         android:layout_below="@+id/buttonC"
-        android:text="Quic Basic C++" />
+        android:text="KOSONG" />
 
     <ImageView
         android:id="@+id/imageViewCek"

@@ -43,7 +43,7 @@ public class Desktop2_1 extends Activity implements View.OnTouchListener, View.O
         findViewById(R.id.imageViewNext).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Desktop2_1.this, Desktop2_2.class);
+                Intent intent = new Intent(Desktop2_1.this, Desktop2_3.class);
                 startActivity(intent);
 
             }
@@ -56,7 +56,7 @@ public class Desktop2_1 extends Activity implements View.OnTouchListener, View.O
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage(" ")
+                    .setMessage("Jawabannya adalah I/O berupa string, I/O berupa integer adalah %d, I/O berupa float adalah %f, I/O berupa karakter adalah %c ")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override

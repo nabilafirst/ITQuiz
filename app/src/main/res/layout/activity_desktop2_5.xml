@@ -52,7 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonC"
         android:layout_below="@+id/buttonC"
-        android:text="Quic Basic C++" />
+        android:text="QuicK Basic C++" />
 
     <ImageView
         android:id="@+id/imageViewCek"

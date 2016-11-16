@@ -55,7 +55,7 @@ public class Desktop2_3 extends Activity implements View.OnClickListener, View.O
 
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage(" ")
+                    .setMessage(" getch() adalah fungsi keluaran suatu program, sedangkan untuk membersihkan layar adalah clrscr()")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -65,11 +65,11 @@ public class Desktop2_3 extends Activity implements View.OnClickListener, View.O
                     })
                     .show();
 
-        } else if (view == btnA) {
+        } else if (view == btnC) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
         } else if (view == btnB) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
-        } else if (view == btnC) {
+        } else if (view == btnA) {
             Toast.makeText(this, "Jawaban anda benar", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();

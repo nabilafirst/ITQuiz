@@ -27,7 +27,7 @@ public class Desktop2_2 extends Activity implements View.OnTouchListener, View.O
 
         initButtonClickedCallback();
 
-
+        alert = (ImageView) findViewById(R.id.imageViewCek);
         alert.setOnClickListener(this);
         btnA = (Button) findViewById(R.id.buttonA);
         btnA.setOnClickListener(this);

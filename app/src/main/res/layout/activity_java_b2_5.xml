@@ -30,7 +30,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonA"
         android:layout_below="@+id/buttonA"
-        android:text="3 dan 4" />
+        android:text="1 dan 3" />
 
     <Button
         android:id="@+id/buttonC"
@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/buttonB"
         android:layout_below="@+id/buttonB"
-        android:text="1 dan 4" />
+        android:text="2 dan 4" />
 
     <Button
         android:id="@+id/buttonD"
@@ -55,14 +55,14 @@
         android:text="2 dan 3" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewCek"
         android:layout_width="140dp"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/buttonD"
         android:layout_marginTop="15dp"
-        android:src="@drawable/cek" />
+        android:background="@drawable/cekbackground" />
 
     <ImageView
         android:id="@+id/imageViewNext"
@@ -72,5 +72,5 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/buttonD"
         android:layout_marginTop="15dp"
-        android:src="@drawable/selanjutnya" />
+        android:src="@drawable/nextbackground" />
 </RelativeLayout>

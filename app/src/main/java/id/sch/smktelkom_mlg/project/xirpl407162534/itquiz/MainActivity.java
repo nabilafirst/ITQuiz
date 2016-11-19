@@ -8,16 +8,21 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ToggleButton;
 
 public class MainActivity extends Activity {
     private static final String TAG = "LivecycleTag";
     MediaPlayer mediaPlayer;
     ToggleButton myToggle;
+    ImageView ivAboutusIkon;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ivAboutusIkon = (ImageView) findViewById(R.id.imageViewAboutusIkon);
 
         findViewById(R.id.imageViewAndroid).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +51,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, JavaHome.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.imageViewAboutusIkon).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AboutUs.class);
                 startActivity(intent);
             }
         });

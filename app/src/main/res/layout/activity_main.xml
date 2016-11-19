@@ -69,4 +69,13 @@
         android:textOff="Matikan Musik"
         android:textOn="Hidupkan Musik" />
 
+    <ImageView
+        android:id="@+id/imageViewAboutusIkon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/aboutus_background" />
+
 </RelativeLayout>

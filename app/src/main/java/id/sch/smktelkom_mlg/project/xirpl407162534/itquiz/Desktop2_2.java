@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class Desktop2_2 extends Activity implements View.OnTouchListener, View.OnClickListener {
 
     Button btnA, btnB, btnC, btnD;
-    ImageView alert = (ImageView) findViewById(R.id.imageViewCek);
+    ImageView alert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

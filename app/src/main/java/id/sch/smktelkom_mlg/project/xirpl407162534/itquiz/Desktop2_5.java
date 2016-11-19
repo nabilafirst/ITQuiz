@@ -27,7 +27,7 @@ public class Desktop2_5 extends Activity implements View.OnClickListener, View.O
         initButtonClickedCallback();
 
 
-        alert = (ImageView) findViewById(R.id.imageView);
+        alert = (ImageView) findViewById(R.id.imageViewCek);
         alert.setOnClickListener(this);
         btnA = (Button) findViewById(R.id.buttonA);
         btnA.setOnClickListener(this);
@@ -92,7 +92,7 @@ public class Desktop2_5 extends Activity implements View.OnClickListener, View.O
     }
 
     @Override
-    public boolean onTouch(View v, MotionEvent me) {
+    public boolean onTouch(View v, MotionEvent motionEvent) {
         switch (v.getId()) {
             case R.id.buttonA:
                 btnA.setBackgroundColor(Color.RED);

@@ -21,7 +21,7 @@ public class JavaB1_3 extends Activity implements View.OnClickListener, OnTouchL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java_b1_1);
+        setContentView(R.layout.activity_java_b1_3);
 
         initButton();
         initButtonClickedCallback();

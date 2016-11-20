@@ -55,8 +55,7 @@ public class WebB2_1 extends Activity implements View.OnClickListener, View.OnTo
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Belum," +
-                            " selesai.")
+                    .setMessage("Back End adalah istilah Halaman belakang pada situs bersistem CMS ( Content Managemen System ) . Memungkin seseorang untuk masuk sebagai administrator dan melakukan perubahan informasi dalam website mereka . Untuk memiliki tingkatan halaman yang aman , setidaknya halaman Back-end dilindungi dengan https dan juga SSL yang akan membuat enskripsi menjadi aman , dan juga password adminisrator yang berformat MD5. Dengan memiliki Halaman Back-end akan memudahkan seorang user untuk meng-update situs mereka .")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -115,6 +114,16 @@ public class WebB2_1 extends Activity implements View.OnClickListener, View.OnTo
 
     @Override
     public void onBackPressed() {
-
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar dari soal?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(WebB2_1.this, WebHome.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }

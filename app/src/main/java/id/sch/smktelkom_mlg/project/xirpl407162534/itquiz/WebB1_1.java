@@ -55,8 +55,7 @@ public class WebB1_1 extends Activity implements View.OnClickListener, View.OnTo
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Belum," +
-                            " selesai.")
+                    .setMessage("web server merupakan pelayan (pemberi layanan) bagi web client (browser) supaya browser dapat menampilkan halaman atau data yang anda minta. XAMPP adalah program aplikasi pengembang yang berguna untuk pengembangan website berbasis PHP dan MySQL. Versi terbaru program ini adalah XAMPP 1.7.7, yang dirilis pada tanggal 20 September 2011. Software XAMPP dibuat dan dikembangkan oleh Apache Friends.")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -65,7 +64,7 @@ public class WebB1_1 extends Activity implements View.OnClickListener, View.OnTo
                         }
                     })
                     .show();
-        } else if (view == btnC) {
+        } else if (view == btnD) {
             Toast.makeText(this, "Jawaban anda benar", Toast.LENGTH_SHORT).show();
         } else if (view == btnB) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
@@ -100,10 +99,10 @@ public class WebB1_1 extends Activity implements View.OnClickListener, View.OnTo
                 btnB.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonC:
-                btnC.setBackgroundColor(Color.GREEN);
+                btnC.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonD:
-                btnD.setBackgroundColor(Color.RED);
+                btnD.setBackgroundColor(Color.GREEN);
                 break;
         }
         btnA.setPressed(btnA.isPressed());
@@ -115,7 +114,17 @@ public class WebB1_1 extends Activity implements View.OnClickListener, View.OnTo
 
     @Override
     public void onBackPressed() {
-
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar dari soal?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(WebB1_1.this, WebHome.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }
 

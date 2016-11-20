@@ -55,8 +55,7 @@ public class WebB3_4 extends Activity implements View.OnClickListener, View.OnTo
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Belum," +
-                            " selesai.")
+                    .setMessage("Untuk menulis komentar 1 baris maka ditulis : //komentar")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -115,6 +114,16 @@ public class WebB3_4 extends Activity implements View.OnClickListener, View.OnTo
 
     @Override
     public void onBackPressed() {
-
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar dari soal?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(WebB3_4.this, WebHome.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }

@@ -122,6 +122,16 @@ public class AndroidB1_5 extends Activity implements View.OnClickListener, OnTou
 
     @Override
     public void onBackPressed() {
-
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar dari soal?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(AndroidB1_5.this, AndroidHome.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }

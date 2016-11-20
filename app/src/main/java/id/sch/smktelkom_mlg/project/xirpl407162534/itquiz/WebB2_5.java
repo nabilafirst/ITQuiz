@@ -55,8 +55,7 @@ public class WebB2_5 extends Activity implements View.OnClickListener, View.OnTo
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Belum," +
-                            " selesai.")
+                    .setMessage("Server-side Scripting adalah bahasa pemrograman web yang pengolahan datanya dilakukan oleh komputer server/penyedia. Jadi, setiap kali sebuah web dikunjungi, server akan mengirimkan data-data yang diminta dari database yang kemudian akan ditampilkan di web. Server-side Script biasanya hanya ada pada web dinamis saja. Server-side Script memengaruhi berat-tidaknya loading sebuah website bergantung pada kecepatan & spesifikasi komputer server. Kode-kode Server-side tidak bisa kita lihat karena sifatnya yang rahasia untuk Client. Contoh dari Server-side Script adalah PHP, ASP, ASP.Net, dll")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -115,6 +114,16 @@ public class WebB2_5 extends Activity implements View.OnClickListener, View.OnTo
 
     @Override
     public void onBackPressed() {
-
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar dari soal?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(WebB2_5.this, WebHome.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }

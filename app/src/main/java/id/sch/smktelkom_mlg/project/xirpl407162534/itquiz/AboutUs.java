@@ -1,9 +1,9 @@
 package id.sch.smktelkom_mlg.project.xirpl407162534.itquiz;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-public class AboutUs extends AppCompatActivity {
+public class AboutUs extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

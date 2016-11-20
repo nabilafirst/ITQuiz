@@ -55,8 +55,7 @@ public class WebB3_1 extends Activity implements View.OnClickListener, View.OnTo
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Belum," +
-                            " selesai.")
+                    .setMessage("Cara pemanggilan alamat file php yang benar adalah localhost://nama_folder/nama_file yang diketikan pada web browser")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -115,6 +114,16 @@ public class WebB3_1 extends Activity implements View.OnClickListener, View.OnTo
 
     @Override
     public void onBackPressed() {
-
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar dari soal?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(WebB3_1.this, WebHome.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }

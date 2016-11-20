@@ -55,8 +55,12 @@ public class WebB3_3 extends Activity implements View.OnClickListener, View.OnTo
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Belum," +
-                            " selesai.")
+                    .setMessage("\"Aturan Penulisan Variabel dalam PHP\n" +
+                            "1. Penulisan variabel harus diawali dengan tanda $\n" +
+                            "2. Variabel dalam PHP bersifat case sensitif\n" +
+                            "3. Tidak mengandung karakter khusus\n" +
+                            "4. Diawali dengan abjad/undersccore\n" +
+                            "5. Tidak mengandung spasi")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -65,7 +69,7 @@ public class WebB3_3 extends Activity implements View.OnClickListener, View.OnTo
                         }
                     })
                     .show();
-        } else if (view == btnC) {
+        } else if (view == btnD) {
             Toast.makeText(this, "Jawaban anda benar", Toast.LENGTH_SHORT).show();
         } else if (view == btnB) {
             Toast.makeText(this, "Jawaban anda salah", Toast.LENGTH_SHORT).show();
@@ -100,10 +104,10 @@ public class WebB3_3 extends Activity implements View.OnClickListener, View.OnTo
                 btnB.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonC:
-                btnC.setBackgroundColor(Color.GREEN);
+                btnC.setBackgroundColor(Color.RED);
                 break;
             case R.id.buttonD:
-                btnD.setBackgroundColor(Color.RED);
+                btnD.setBackgroundColor(Color.GREEN);
                 break;
         }
         btnA.setPressed(btnA.isPressed());
@@ -115,6 +119,16 @@ public class WebB3_3 extends Activity implements View.OnClickListener, View.OnTo
 
     @Override
     public void onBackPressed() {
-
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar dari soal?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(WebB3_3.this, WebHome.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }

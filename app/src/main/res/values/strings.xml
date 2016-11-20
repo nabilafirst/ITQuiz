@@ -5,4 +5,8 @@
     <string name="opsiB"><![CDATA[for(int j=0; j<=10; j++) {}]]></string>
     <string name="opsiC"><![CDATA[for(int i=10; i>=1; i--) {}]]></string>
     <string name="opsiD"><![CDATA[for(int j=10; j>0; j-) {}]]></string>
+    <string name="pilihanA"><![CDATA[for(int i=1; i<=10; i+2)]]></string>
+    <string name="pilihanB"><![CDATA[for(int i=1; i>=10; i+2)]]></string>
+    <string name="pilihanC"><![CDATA[for(int i=1; i>=11; i+2)]]></string>
+    <string name="pilihanD"><![CDATA[for(int i=1; i<=11; i+2)]]></string>
 </resources>

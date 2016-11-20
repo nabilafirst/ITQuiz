@@ -19,7 +19,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:text="Localhost/nama_folder" />
+        android:text="Localhost/nama_folder/nama_file" />
 
     <Button
         android:id="@+id/buttonB"

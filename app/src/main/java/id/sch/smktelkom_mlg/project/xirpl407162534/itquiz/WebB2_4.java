@@ -55,8 +55,13 @@ public class WebB2_4 extends Activity implements View.OnClickListener, View.OnTo
         if (view == alert) {
             new AlertDialog.Builder(this)
                     .setTitle("Penjelasan")
-                    .setMessage("Belum," +
-                            " selesai.")
+                    .setMessage("Ciri-ciri : \n" +
+                            "Desain informasi seperti berkaitan bagaimana informasi diatur di server\n" +
+                            "Pemrosesan form\n" +
+                            "Diakses oleh seorang admi\n" +
+                            "Pemograman database\n" +
+                            "Content management systems\n" +
+                            "Aplikasi berbasis web server lain menggunakan PHP, JSP, Ruby, ASP.NET, Java, dan bahasa pemograman lainnya")
                     .setNeutralButton("TUTUP", new DialogInterface.OnClickListener() {
 
                         @Override
@@ -115,6 +120,16 @@ public class WebB2_4 extends Activity implements View.OnClickListener, View.OnTo
 
     @Override
     public void onBackPressed() {
-
+        new AlertDialog.Builder(this)
+                .setMessage("Apakah Anda yakin akan keluar dari soal?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(WebB2_4.this, WebHome.class);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }
